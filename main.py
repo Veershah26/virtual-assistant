@@ -57,4 +57,17 @@ def wishme():
     date()
     speak("How May I Help You")
 
-wishme()
+# wishme()
+
+def takecmd():
+    query = input("Please Tell Me How May I Help You ? \n")
+    return query
+
+if __name__ == "__main__":
+    wishme()
+    while True:
+        query = takecmd().lower()
+        if 'time' in query:
+            time()
+        elif 'date' in query:
+            date()
