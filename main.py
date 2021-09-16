@@ -1,5 +1,6 @@
 import pyttsx3
 import datetime
+import string as str
 
 ttsengine = pyttsx3.init()
 
@@ -19,19 +20,16 @@ def getvoices(voice):
     speak("Hello Darkness My Old Friend")
 
 def time():
-    Time = datetime.datetime.now().strftime("%I:%M:%S")
+    Time = datetime.datetime.now().strftime("%I:%M %p")
     speak("The Current Time Is")
     speak(Time)
-    print(Time)
+    # print(Time)
 
 def date():
-    year = int(datetime.datetime.now().year)
-    month = int(datetime.datetime.now().month)
-    date = int(datetime.datetime.now().day)
-    speak("The Current Date Is:")
-    speak(date)
-    speak(month)
-    speak(year)
+    today = datetime.datetime.now()
+    today_date = today.strftime("%m/%d/%Y")
+    speak("The Current Date Is ")
+    speak(today_date)
 
 # while True:
 #     voice = int(input("Enter 1 or 2: "))
@@ -53,8 +51,8 @@ def greeting():
 def wishme():
     speak("Welcome Back Sir!")
     greeting()
-    time()
-    date()
+    # time()
+    # date()
     speak("How May I Help You")
 
 # wishme()
