@@ -1,6 +1,7 @@
 import pyttsx3
 import datetime
 import speech_recognition as sr
+import wikipedia
 
 
 ttsengine = pyttsx3.init()
@@ -86,3 +87,11 @@ if __name__ == "__main__":
             time()
         elif 'date' in query:
             date()
+          
+        elif "wikipedia" in query:                 #wikipedia search
+            print(query)
+            query=query.replace("wikipedia","")
+            results=wikipedia.summary(query,sentences=2)
+            speak("According to Wikipedia")
+            speak(results)
+            exit()
