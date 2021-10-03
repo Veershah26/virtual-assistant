@@ -41,14 +41,13 @@ def date():
 
 def greeting():
     hour = datetime.datetime.now().hour
-    if hour >= 6 and hour <12:
-        speak("Good Morning Sir")
-    elif hour >=12 and hour <18:
-        speak("Good Afternoon Sir")
-    elif hour >=18 and hour < 24:
-        speak("Good Evening Sir")
-    else:
-        speak("Good Night Sir")
+    if hour >= 6 and hour <12 :
+        speak("Good Morning Sir !")
+    elif hour >=12 and hour <18 :
+        speak("Good Afternoon Sir !")
+    else :
+        speak("Good Evening Sir !")
+
 
 def wishme():
     speak("Welcome Back Sir!")
