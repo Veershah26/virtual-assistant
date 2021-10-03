@@ -2,8 +2,7 @@ from pytube import YouTube
 import os
 
 
-def downloadYtMp4(ytID, dlDir=os.getcwd()):
-    ytURL = "https://www.youtube.com/watch?v=" + str(ytID)
+def downloadYtMp4(ytURL, dlDir=os.getcwd()):
     yt = YouTube(ytURL)
     try:
         print("Downloading...")
@@ -13,4 +12,4 @@ def downloadYtMp4(ytID, dlDir=os.getcwd()):
     print(f"Donwload Complete | Saved at {os.getcwd()}")
 
 
-downloadYtMp4("LLSazn7BgzE")
+downloadYtMp4("URL")
