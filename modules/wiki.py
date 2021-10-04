@@ -5,4 +5,4 @@ def wiki(query):
     results=wikipedia.summary(query,sentences=2)
     print(start + " " + results)
     
-wiki("rooney")
+wiki("query")
