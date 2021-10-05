@@ -12,6 +12,9 @@ def photo_with_python():
     cv2.imwrite(f"{t.second,t.minute,t.hour,t.day,t.month}.png",image)
     del(camera)
 
+    
+    
+photo_with_python()
 
-if __name__ == "__main__":
-    photo_with_python()
+#if __name__ == "__main__":
+  #  photo_with_python()
