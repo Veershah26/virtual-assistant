@@ -19,4 +19,5 @@ def WallpaperScrapper():
     else:
         print('Invalid username or folder location!!')
 
-WallpaperScrapper()
+if __name__ == '__main__':
+    WallpaperScrapper()
