@@ -4,3 +4,5 @@ SpeechRecognition==3.8.1
 pyaudio==0.2.11
 pyowm==3.2.0
 python-dotenv==0.19.0
+opencv-python==4.1.2.30
+pytube==11.0.1
