@@ -2,8 +2,6 @@ import datetime
 import cv2
 
 
-
-
 def photo_with_python():
     t = datetime.datetime.now()
 #     Taking a video from the webcam 
@@ -15,11 +13,12 @@ def photo_with_python():
 # Giving the camera around 20 frames to adjust to the surroundings for better picture quality
     cv2.imwrite(f"{t.second,t.minute,t.hour,t.day,t.month}.png",image)
 #     As soon as the image is saved we will stop recording
-    del(camera)
+    del camera
 
     
 # Calling the photo_with_python function
-photo_with_python()
+if __name__ == "__main__":
+    photo_with_python()
 
 # We need to give some special keyword to this function like click a picture or open camera so the when that's called this function is called
 

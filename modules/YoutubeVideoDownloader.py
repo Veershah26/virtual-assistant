@@ -11,5 +11,5 @@ def downloadYtMp4(ytURL, dlDir=os.getcwd()):
         print("ERROR | Please try again later")
     print(f"Donwload Complete | Saved at {os.getcwd()}")
 
-
-downloadYtMp4("URL")
+if __name__ == "__main__":
+    downloadYtMp4("URL")

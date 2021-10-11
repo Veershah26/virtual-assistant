@@ -1,3 +1,11 @@
+from modules.Apicommand import *
+from modules.photo_with_python import *
+from modules.ScreenShot import *
+from modules.StressBusters import *
+from modules.WallpaperScrapper import *
+from modules.weather import *
+from modules.wiki import *
+from modules.YoutubeVideoDownloader import *
 import pyttsx3
 import datetime
 import speech_recognition as sr
@@ -79,6 +87,13 @@ def takecmdmic():
 
 if __name__ == "__main__":
     wishme()
+    api()
+    photo_with_python()
+    StressBusters()
+    WallpaperScrapper()
+    #weather function which doesnt work because of non existent api key
+    wiki('Python')
+    downloadYtMp4('https://www.youtube.com/watch?v=lHhRhPV--G0') #random video to test functionality
     while True:
         query = takecmdmic().lower()
         if 'time' in query:
