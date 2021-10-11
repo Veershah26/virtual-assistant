@@ -92,6 +92,13 @@ if __name__ == "__main__":
     StressBusters()
     WallpaperScrapper()
     #weather function which doesnt work because of non existent api key
+    # temp()
+    # detail()
+    # rain()
+    # pressure()
+    # wind()
+    # humidity()
+    # clouds()
     wiki('Python')
     downloadYtMp4('https://www.youtube.com/watch?v=lHhRhPV--G0') #random video to test functionality
     while True:
