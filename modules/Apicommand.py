@@ -33,4 +33,5 @@ def api():
         except Exception as e:
             print(error)
 
-api()
+if __name__ == "__main__":
+    api()

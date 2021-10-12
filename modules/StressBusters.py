@@ -36,4 +36,5 @@ def StressBusters():
             n.show_toast('StressBusters', choice(messages), duration=10)  # 20
             tstart = round(time.time())
 
-StressBusters()
+if __name__ == "__main__":
+    StressBusters()
