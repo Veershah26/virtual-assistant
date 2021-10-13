@@ -9,7 +9,7 @@ from modules.YoutubeVideoDownloader import *
 import pyttsx3
 import datetime
 import speech_recognition as sr
-
+from modules.mp3 import *
 
 ttsengine = pyttsx3.init()
 
@@ -89,6 +89,7 @@ if __name__ == "__main__":
     wishme()
     api()
     photo_with_python()
+    playmusic()
     StressBusters()
     WallpaperScrapper()
     #weather function which doesnt work because of non existent api key
