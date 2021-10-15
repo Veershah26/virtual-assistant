@@ -3,6 +3,7 @@ from modules.photo_with_python import *
 from modules.ScreenShot import *
 from modules.StressBusters import *
 from modules.WallpaperScrapper import *
+from modules.send_mail import email_send, send_mail
 from modules.weather import *
 from modules.wiki import *
 from modules.YoutubeVideoDownloader import *
@@ -92,19 +93,19 @@ if __name__ == "__main__":
     playmusic()
     StressBusters()
     WallpaperScrapper()
-    #weather function which doesnt work because of non existent api key
-    # temp()
-    # detail()
-    # rain()
-    # pressure()
-    # wind()
-    # humidity()
-    # clouds()
-    wiki('Python')
-    downloadYtMp4('https://www.youtube.com/watch?v=lHhRhPV--G0') #random video to test functionality
-    while True:
-        query = takecmdmic().lower()
-        if 'time' in query:
-            time()
-        elif 'date' in query:
-            date()
+    weather function which doesnt work because of non existent api key
+    temp()
+    detail()
+    rain()
+    pressure()
+    wind()
+    humidity()
+    clouds()
+    # wiki('Python')
+    # downloadYtMp4('https://www.youtube.com/watch?v=lHhRhPV--G0') #random video to test functionality
+    # while True:
+    #     query = takecmdmic().lower()
+    #     if 'time' in query:
+    #         time()
+    #     elif 'date' in query:
+    #         date()
