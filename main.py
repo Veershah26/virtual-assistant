@@ -1,18 +1,18 @@
-from modules.Apicommand import *
-from modules.photo_with_python import *
-from modules.ScreenShot import *
-from modules.StressBusters import *
-from modules.WallpaperScrapper import *
-from modules.send_mail import email_send, send_mail
-from modules.weather import *
-from modules.wiki import *
-from modules.YoutubeVideoDownloader import *
-import pyttsx3
-import datetime
-import speech_recognition as sr
-from modules.mp3 import *
+# from modules.Apicommand import *
+# from modules.photo_with_python import *
+# from modules.ScreenShot import *
+# from modules.StressBusters import *
+# from modules.WallpaperScrapper import *
+# from modules.weather import *
+# from modules.wiki import *
+# from modules.YoutubeVideoDownloader import *
+# import pyttsx3
+# import datetime
+# import speech_recognition as sr
+# from modules.mp3 import *
+from modules.send_mail import *
 
-ttsengine = pyttsx3.init()
+#ttsengine = pyttsx3.init()
 
 def speak(audio):
     ttsengine.say(audio)
@@ -87,20 +87,21 @@ def takecmdmic():
     return query
 
 if __name__ == "__main__":
-    wishme()
-    api()
-    photo_with_python()
-    playmusic()
-    StressBusters()
-    WallpaperScrapper()
-    weather function which doesnt work because of non existent api key
-    temp()
-    detail()
-    rain()
-    pressure()
-    wind()
-    humidity()
-    clouds()
+    email_send()
+    # wishme()
+    # api()
+    # photo_with_python()
+    # playmusic()
+    # StressBusters()
+    # WallpaperScrapper()
+    # weather function which doesnt work because of non existent api key
+    # temp()
+    # detail()
+    # rain()
+    # pressure()
+    # wind()
+    # humidity()
+    # clouds()
     # wiki('Python')
     # downloadYtMp4('https://www.youtube.com/watch?v=lHhRhPV--G0') #random video to test functionality
     # while True:

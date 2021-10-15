@@ -1,20 +1,18 @@
 # load libraries
 import smtplib
 from tkinter import *
+import sys
 # function to send mail
-def send_mail():
+def send_mail()-> None:
 
     s=smtplib.SMTP('smtp.gmail.com',587)
     s.starttls()
     #try with login by user credentials
     try:
         s.login(sender_email.get(),password.get())
-        print("login")
         s.sendmail(sender_email.get(),receiver_email.get(),inputtxt.get("1.0","end-1c"))
-        print("send message")
-        print("Sent")
         s.quit()
-        exit()
+        return
     # if Email not send or not able to login
     except:
         response.place(relx=0.0,rely=0.85)
