@@ -10,6 +10,7 @@ import pyttsx3
 import datetime
 import speech_recognition as sr
 from modules.mp3 import *
+from modules.send_mail import *
 
 ttsengine = pyttsx3.init()
 
@@ -86,12 +87,14 @@ def takecmdmic():
     return query
 
 if __name__ == "__main__":
+    
     wishme()
     api()
     photo_with_python()
     playmusic()
+    email_send()
     StressBusters()
-    WallpaperScrapper()
+    WallpaperScrapper() 
     #weather function which doesnt work because of non existent api key
     # temp()
     # detail()
