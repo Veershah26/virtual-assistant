@@ -1,4 +1,5 @@
 from modules.Apicommand import *
+from modules.covid_cases import check_command_is_for_covid_cases
 from modules.photo_with_python import *
 from modules.ScreenShot import *
 from modules.StressBusters import *
@@ -8,6 +9,10 @@ from modules.wiki import *
 from modules.YoutubeVideoDownloader import *
 import pyttsx3
 import datetime
+
+from modules.net_speed import download_speed, ping, upload_speed
+from modules.price import price
+from modules.quotes import *
 import speech_recognition as sr
 from modules.mp3 import *
 from modules.send_mail import *
@@ -113,3 +118,35 @@ if __name__ == "__main__":
             time()
         elif 'date' in query:
             date()
+
+        elif 'active cases of covid' in query:
+            cases=check_command_is_for_covid_cases(query)
+            print(cases)
+            speak(cases)
+
+        elif "download speed" in query:
+            speak(f'Download Speed is {download_speed()} MB/s')
+
+        elif "upload speed" in query:
+            speak(f'Uplaod Speed is {upload_speed()} MB/s')
+
+        elif "ping" in query:
+            speak(f'Ping is {ping()}')
+
+        elif "depressed" in query:          # There are many quotes available in quotes.py file
+            quote=random_quote()
+            print(quote)
+            speak(quote)
+        elif "bitcoin" in query and "price" in query:       # Not only Bitcoin , you can try other currencies also: reffer price.py file
+            r=price('bitcoin')
+            print(r)
+            speak(r)
+        
+        elif "currency price" in query:
+            coin=str(takecmdmic().lower())
+            p=price(coin)
+            print(p)
+            speak(p)
+
+        elif 'bye' in query or 'else' in query:
+            exit()
