@@ -11,7 +11,7 @@ import datetime
 import speech_recognition as sr
 from modules.mp3 import *
 from modules.send_mail import *
-
+from modules.shopping_list_maker import *
 ttsengine = pyttsx3.init()
 
 def speak(audio):
@@ -93,7 +93,9 @@ if __name__ == "__main__":
     photo_with_python()
     playmusic()
     email_send()
+    take_command() # to make shoppinf list
     StressBusters()
+    
     WallpaperScrapper() 
     #weather function which doesnt work because of non existent api key
     # temp()
