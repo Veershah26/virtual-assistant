@@ -12,7 +12,6 @@ import speech_recognition as sr
 from modules.mp3 import *
 from modules.send_mail import *
 from modules.shopping_list_maker import *
-from modules.open_email import *
 ttsengine = pyttsx3.init()
 
 def speak(audio):
@@ -94,7 +93,6 @@ if __name__ == "__main__":
     photo_with_python()
     playmusic()
     email_send()
-    emain_opener()
     take_command() # to make shoppinf list
     StressBusters()
     
