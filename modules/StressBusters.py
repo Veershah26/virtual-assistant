@@ -35,6 +35,7 @@ def StressBusters():
         if round(time.time()) - tstart == my_time * 60:
             n.show_toast('StressBusters', choice(messages), duration=10)  # 20
             tstart = round(time.time())
+            break
 
 if __name__ == "__main__":
     StressBusters()
